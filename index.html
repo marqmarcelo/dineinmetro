@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineinMetro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Dine<span class="highlight">in</span>Metro</h1>
+        <h2><p>Powered by <span class="marq-text">MARQ<span class="tooltip">"I'm a weary doctor relieved from the burden of deciding where to dine, thanks to this website dedicated to simplifying culinary choices for everyone. Discover and relish diverse cuisines effortlessly!"</span></span></p>
+        <p>Contact me at marqvmarcelo@yahoo.com for feedback and business</p></h2>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <h2>What are you craving today?</h2>
+            <p></p><button onclick="suggestRestaurant('Bread')">Bread</button>
+            <button onclick="suggestRestaurant('Pasta')">Pasta</button>
+            <button onclick="suggestRestaurant('Chicken')">Chicken</button>
+            <button onclick="suggestRestaurant('Fastfood')">Fastfood</button></p>
+           <p><button onclick="suggestRestaurant('Seafood')">Seafood</button>
+            <button onclick="suggestRestaurant('Vegetables')">Vegetables</button>
+            <button onclick="suggestRestaurant('Pork')">Pork</button>
+            <button onclick="suggestRestaurant('Beef')">Beef</button></p>
+        </div>
+    </div>
+    
+        <div id="loading" class="loading">
+        <div class="loader"></div> <!-- Loader animation element -->
+    </div>
+
+
+    <div id="result" class="result"></div>
+    <button id="backButton" style="display: none;" onclick="goBackToRandomizer()">Back to Randomizer</button>
+
+    <script src="index.js"></script>
+</body>
+</html>

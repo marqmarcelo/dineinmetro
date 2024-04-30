@@ -1,0 +1,127 @@
+body {
+    background: #2C3A47; /* Cool color gradient with black */
+    color: white; /* Text color for contrast */
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background-color: #333; /* Dark background color for header */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0; /* Padding for top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.header h1 {
+    font-size: 3em; /* Larger font size for header */
+    margin: 0; /* Remove margin */
+}
+
+.header h2 {
+    font-size: 15px; /* Larger font size for header */
+    margin: 0; /* Remove margin */
+}
+
+.header .highlight {
+    color: #ff9800; /* Highlight color for 'in' */
+    font-weight: bold; /* Make highlighted text bold */
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px; /* Add margin to separate from header */
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    bottom: 10px; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center using translate */
+    text-align: center;
+}
+
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 50%;
+    border-top: 4px solid white; /* White top border */
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Animation */
+    margin-top: 20px; /* Margin to separate from text */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.result {
+    display: none;
+    border: 0px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#backButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px; /* Adjust this value for vertical positioning */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+
+.marq-text {
+    font-weight: bold;
+    color: white;
+    position: relative; /* Position relative for tooltip positioning */
+    text-decoration: underline; /* Add underline effect */
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.9); /* White background color with opacity */
+    color: #333; /* Dark text color */
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.marq-text:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Show the tooltip on hover */
+}
