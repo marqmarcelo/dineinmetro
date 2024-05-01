@@ -4,40 +4,40 @@ body {
     font-family: Arial, sans-serif;
 }
 
-    .sidebar h1{
+.sidebar h1{
       font-size: 20px;
       text-align: center;
       color: antiquewhite;
       padding-bottom: 50px;
-    }
+}
     
-    .sidebar h2 {
+.sidebar h2 {
       font-size: 15px;
       text-align: center;
       padding: 10px;
       color: antiquewhite;
-    }
+}
     
-    .sidebar h3 {
+.sidebar h3 {
       font-size: 10px;
       text-align: center;
       color: antiquewhite;
       position: absolute;
       bottom: 80px;
-    }
+}
 
-    .sidebar .highlight1 {
+.sidebar .highlight1 {
       font-size: 30px;
       font-weight: underline;
       color: darkorange;
     }
     
-    .sidebar .highlight2 {
+.sidebar .highlight2 {
       font-size: 15px;
       color: darkorange;
-    }
+}
 
-    .sidebar {
+.sidebar {
         height: 100vh; /* Full height */
         width: 200px; /* Sidebar width */
         position: fixed; /* Fixed sidebar position */
@@ -48,22 +48,22 @@ body {
         padding-top: 60px; /* Space for the menu items */
         transition: 0.3s; /* Smooth transition */
         box-shadow:0 2px 4px;
-    }
+}
 
-    .sidebar a {
+.sidebar a {
         padding: 10px 15px;
         text-decoration: none;
         font-size: 20px;
         color: #fff;
         display: block;
         transition: 0.3s; /* Smooth transition for hover effects */
-    }
+}
 
-    .sidebar a:hover {
+.sidebar a:hover {
         background-color: black; /* Darker background on hover */
-    }
+}
 
-    #sidebar-toggle {
+#sidebar-toggle {
         position: fixed;
         top: 10px;
         left: 10px;
@@ -74,12 +74,12 @@ body {
         padding: 10px 20px; /* Added padding for arrow */
         border-radius: 5px;
         box-shadow: 0 4px 5px;
-    }
+}
 
     /* Rotate arrow when sidebar is open */
-    .sidebar-open #sidebar-toggle::after {
+.sidebar-open #sidebar-toggle::after {
         transform: rotate(90deg);
-    }
+}
 
 .header {
     background-color: #333; /* Dark background color for header */
