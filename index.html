@@ -9,14 +9,13 @@
 <body>
     <header class="header">
         <h1>Dine<span class="highlight">in</span>Metro</h1>
-        <h2><p>Powered by <span class="marq-text">MARQ<span class="tooltip">"I'm a weary doctor relieved from the burden of deciding where to dine, thanks to this website dedicated to simplifying culinary choices for everyone. Discover and relish diverse cuisines effortlessly!"</span></span></p>
-        <p>Contact me at marqvmarcelo@yahoo.com for feedback and business</p></h2>
+        <h2>Savor after <span class="highlight">click</span>: Taste without the <span class="highlight">think!</span></h2>
     </header>
 
     <div class="content">
         <div class="container">
             <h2>What are you craving today?</h2>
-            <p></p><button onclick="suggestRestaurant('Bread')">Bread</button>
+            <p><button onclick="suggestRestaurant('Bread')">Bread</button>
             <button onclick="suggestRestaurant('Pasta')">Pasta</button>
             <button onclick="suggestRestaurant('Chicken')">Chicken</button>
             <button onclick="suggestRestaurant('Fastfood')">Fastfood</button></p>
@@ -24,7 +23,21 @@
             <button onclick="suggestRestaurant('Vegetables')">Vegetables</button>
             <button onclick="suggestRestaurant('Pork')">Pork</button>
             <button onclick="suggestRestaurant('Beef')">Beef</button></p>
+            <p></p><button onclick="suggestRestaurant('Chinese')">Chinese</button>
+            <button onclick="suggestRestaurant('Japanese')">Japanese</button>
+            <button onclick="suggestRestaurant('Drinks')">Drinks</button>
+            <button onclick="suggestRestaurant('Dessert')">Dessert</button></p>
         </div>
+    </div>
+    
+    <!-- Button to toggle the sidebar -->
+    <div id="sidebar-toggle" onclick="toggleSidebar()">☰</div>
+    
+    <!-- Sidebar content -->
+    <div class="sidebar" id="mySidebar">
+      <h1>Powered by <span class="highlight1">MARQ</span</h1>
+          <h2>I'm a weary doctor relieved from the burden of deciding where to dine, thanks to this website dedicated to simplifying culinary choices for everyone. Discover and relish diverse cuisines effortlessly!</h2>
+          <h3>Contact me at <span class="highlight2">marqvmarcelo@yahoo.com</span> for feedback and business</h3>
     </div>
     
         <div id="loading" class="loading">

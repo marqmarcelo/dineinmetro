@@ -4,6 +4,82 @@ body {
     font-family: Arial, sans-serif;
 }
 
+    .sidebar h1{
+      font-size: 20px;
+      text-align: center;
+      color: antiquewhite;
+      padding-bottom: 50px;
+    }
+    
+    .sidebar h2 {
+      font-size: 15px;
+      text-align: center;
+      padding: 10px;
+      color: antiquewhite;
+    }
+    
+    .sidebar h3 {
+      font-size: 10px;
+      text-align: center;
+      color: antiquewhite;
+      position: absolute;
+      bottom: 80px;
+    }
+
+    .sidebar .highlight1 {
+      font-size: 30px;
+      font-weight: underline;
+      color: darkorange;
+    }
+    
+    .sidebar .highlight2 {
+      font-size: 15px;
+      color: darkorange;
+    }
+
+    .sidebar {
+        height: 100vh; /* Full height */
+        width: 200px; /* Sidebar width */
+        position: fixed; /* Fixed sidebar position */
+        top: 0;
+        left: -250px; /* Initially hidden off the screen */
+        background-color: darkslategray; /* Sidebar background color */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        padding-top: 60px; /* Space for the menu items */
+        transition: 0.3s; /* Smooth transition */
+        box-shadow:0 2px 4px;
+    }
+
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        transition: 0.3s; /* Smooth transition for hover effects */
+    }
+
+    .sidebar a:hover {
+        background-color: black; /* Darker background on hover */
+    }
+
+    #sidebar-toggle {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 30px;
+        color: black;
+        background-color: orange;
+        padding: 10px 20px; /* Added padding for arrow */
+        border-radius: 5px;
+        box-shadow: 0 4px 5px;
+    }
+
+    /* Rotate arrow when sidebar is open */
+    .sidebar-open #sidebar-toggle::after {
+        transform: rotate(90deg);
+    }
 
 .header {
     background-color: #333; /* Dark background color for header */
@@ -16,6 +92,7 @@ body {
 .header h1 {
     font-size: 3em; /* Larger font size for header */
     margin: 0; /* Remove margin */
+    padding: 10px;
 }
 
 .header h2 {
@@ -31,7 +108,7 @@ body {
 .content {
     padding: 10px;
     text-align: center;
-    margin-top: 30px; /* Add margin to separate from header */
+    margin-top: 10px; /* Add margin to separate from header */
 }
 
 .container {
@@ -40,13 +117,18 @@ body {
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 120px;
+    align-content: center;
     margin: 10px;
     cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+    background-color: teal;
+    color: black;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 2px 4px;
 }
 
 .loading {
@@ -88,40 +170,13 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #FF5722;
-    color: white;
+    color: black;
+    height: 60px;
+    width: 120px;
     border: none;
     border-radius: 5px;
     position: relative;
     bottom: 10px; /* Adjust this value for vertical positioning */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-}
-
-
-.marq-text {
-    font-weight: bold;
-    color: white;
-    position: relative; /* Position relative for tooltip positioning */
-    text-decoration: underline; /* Add underline effect */
-}
-
-.tooltip {
-    visibility: hidden;
-    background-color: rgba(255, 255, 255, 0.9); /* White background color with opacity */
-    color: #333; /* Dark text color */
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px; /* Adjust width as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    transition: opacity 0.3s ease; /* Smooth transition for visibility */
-}
-
-.marq-text:hover .tooltip {
-    visibility: visible;
-    opacity: 1; /* Show the tooltip on hover */
 }
